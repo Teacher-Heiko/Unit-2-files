@@ -2,6 +2,7 @@
 # Note below code handles numbers greater than 1 as well
 # Try 3.375
 x = float(input('Enter a decimal number between 0 and 1: '))
+# Try 0.375 , 0.1 , 0.2 , 0.5
 
 p = 0
 while ((2**p)*x)%1 != 0:
@@ -30,7 +31,7 @@ print("p - len(result):", p - len(result))
 # and so on , p = 5 , to shift 5 decimal.
 #  
 # for loop to shift right
-for i in range(p - len(result)):
+for _ in range(p - len(result)):
     # Why is the right most bit always 0 ?
     # Well it's not always e.g. dec 0.5 is bin .1
     result = '0' + result     # shift right e.g. 11 becomes 011
