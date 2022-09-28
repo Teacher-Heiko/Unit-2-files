@@ -26,15 +26,15 @@ while num > 0:
 
 print("result:", result)
 print("p - len(result):", p - len(result))
-# if p = 2 , we need to shit 2 decimal of a binary number , 
-# and so on , p = 5 , to shift 5 decimal . 
-# so for lop in your post mean this code block check enough 
-# or not to shift zero
+# if p = 2 , we need to shift 2 decimal of a binary number , 
+# and so on , p = 5 , to shift 5 decimal.
+#  
+# for loop to shift right
 for i in range(p - len(result)):
     # Why is the right most bit always 0 ?
     # Well it's not always e.g. dec 0.5 is bin .1
     result = '0' + result     # shift right e.g. 11 becomes 011
-print("result bottom:", result)
+print("result after right shift :", result)
 
 # 0:-p This is for numbers > 1 e.g. 3.375 is 11.011
 # -p: is the whole string after the binary point
